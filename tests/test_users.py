@@ -14,7 +14,16 @@ def test_get_users(api_client):
     assert isinstance(response.json(), list)
 
 
+def test_create_user(api_client):
+    payload = {
+        "name": "Mahir",
+        "job": "Automation Engineer"
+    }
 
+    response = api_client.post("/users", data=payload)
+
+    assert response.status_code == 201
+    assert response.json()["name"] == "Mahir"
 
 
 
