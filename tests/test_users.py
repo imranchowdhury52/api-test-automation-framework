@@ -26,4 +26,8 @@ def test_create_user(api_client):
     assert response.json()["name"] == "Mahir"
 
 
+# Negative test case: Attempt to retrieve a non-existing user
+def test_get_non_existing_user(api_client):
+    response = api_client.get("/users/99999")
 
+    assert response.status_code == 404
