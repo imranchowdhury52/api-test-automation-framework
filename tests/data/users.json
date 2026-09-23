@@ -1,0 +1,18 @@
+{
+  "existing_users": [
+    {"id": 1, "username": "Bret", "email": "Sincere@april.biz"},
+    {"id": 2, "username": "Antonette", "email": "Shanna@melissa.tv"},
+    {"id": 10, "username": "Moriah.Stanton", "email": "Rey.Padberg@karina.biz"}
+  ],
+  "new_users": [
+    {"name": "Mahir", "job": "Automation Engineer"},
+    {"name": "Anna Schmidt", "job": "QA Lead"},
+    {"name": "Jürgen Müller", "job": "Developer"}
+  ],
+  "invalid_user_ids": [
+    {"id": "0", "reason": "zero id"},
+    {"id": "11", "reason": "just above the last valid id"},
+    {"id": "99999", "reason": "very large id"},
+    {"id": "abc", "reason": "non-numeric id"}
+  ]
+}
